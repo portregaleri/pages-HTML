@@ -1,0 +1,4 @@
+﻿	.cookie-choices-info {z-index:999999!important;background-color:#333333!important;border-top: 1px solid #6FC415; 
+     box-shadow: 1px 2px 2px #000!important; padding:3px 0px!important;position:fixed;bottom:0px;top:95%}
+    .cookie-choices-info .cookie-choices-text{font-size:14px !important; color:#dddddd!important;}
+    .cookie-choices-info .cookie-choices-button{background-color: #6FC415!important;border-radius: 4px!important;box-shadow: 2px 3px 2px #000!important; padding:6px!important;text-transform: none!important;}
