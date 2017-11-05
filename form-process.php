@@ -4,21 +4,21 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "İsim Zorunludur ";
 } else {
     $name = $_POST["name"];
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Eposta Zorunludur ";
 } else {
     $email = $_POST["email"];
 }
 
 // MSG SUBJECT
 if (empty($_POST["msg_subject"])) {
-    $errorMSG .= "Subject is required ";
+    $errorMSG .= "Konu Zorunludur ";
 } else {
     $msg_subject = $_POST["msg_subject"];
 }
@@ -26,14 +26,14 @@ if (empty($_POST["msg_subject"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Mesaj Zorunludur ";
 } else {
     $message = $_POST["message"];
 }
 
 
 $EmailTo = "portregaleri@gmail.com";
-$Subject = "New Message Received";
+$Subject = "Yeni Mesaj Alınmıştır";
 
 // prepare email body text
 $Body = "";
