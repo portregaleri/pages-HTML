@@ -46,7 +46,7 @@ if (empty($_POST["option"])) {
 }
 
 
-$EmailTo = "murat3300@hotmail.com";
+$EmailTo = "portregaleri@gmail.com";
 $Subject = "Yeni Mesaj Alınmıştır";
 
 // prepare email body text
