@@ -23,7 +23,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "https://cdn.rawgit.com/portregaleri/pages-HTML/4ee480a6/form-process.php",
+        href: "https://cdn.rawgit.com/portregaleri/pages-HTML/4ee480a6/form-process.php",
         data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message, + "&option=" + option, + "&upload=" + upload,
         success : function(text){
             if (text == "success"){
