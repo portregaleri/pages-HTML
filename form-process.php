@@ -35,14 +35,14 @@ if (empty($_POST["message"])) {
 if (empty($_POST["upload"])) {
     $errorMSG .= "Mesaj gerekiyor ";
 } else {
-    $message = $_POST["upload"];
+    $upload = $_POST["upload"];
 }
 
 // OPTİON
 if (empty($_POST["option"])) {
     $errorMSG .= "Mesaj gerekiyor ";
 } else {
-    $message = $_POST["option"];
+    $option = $_POST["option"];
 }
 
 
