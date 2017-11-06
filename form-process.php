@@ -31,6 +31,10 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
+// EMAIL
+if (empty($_POST["upload"])) {
+    $email = $_POST["upload"];
+}
 
 $EmailTo = "portregaleri@gmail.com";
 $Subject = "Yeni Mesaj Alınmıştır";
@@ -49,7 +53,9 @@ $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
-
+$Body .= "upload: ";
+$Body .= $upload;
+$Body .= "\n";
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
