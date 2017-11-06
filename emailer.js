@@ -1,0 +1,58 @@
+Parse.Cloud.define("sendEmail", function(request, response) {
+  var sendgrid = require("sendgrid");
+  sendgrid.initialize("your_sendgrid_username", "your_sendgrid_password");
+ 
+  var name = request.params.name;
+  var email = request.params.email;
+  var message = request.params.message;
+ 
+  sendgrid.sendEmail({
+   to: "portregaleri@gmail.com",
+   from: email,
+   fromname: name,
+   subject: "Email from my website",
+   text: "Name: "+name+"\nEmail: "+email+"\nMessage:\n\n"+message
+   }, {
+     success: function(httpResponse) {
+       console.log(httpResponse);
+       response.success("Email sent!");
+    },
+     error: function(httpResponse) {
+       console.error(httpResponse);
+       response.error("Uh oh, something went wrong");
+    }
+  });
+});
+
+$(document).ready(function(){
+
+  // Initialize Parse with your Parse application & javascript keys
+  Parse.initialize("your_parse_app_key", "your_parse_javascript_key");
+
+  // Setup the form to watch for the submit event
+  $('#myForm').submit(function(e){
+    e.preventDefault();
+
+    // Grab the elements from the form to make up
+    // an object containing name, email and message
+    var data = { 
+      name: document.getElementById('name').value, 
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    }
+    
+    // Run our Parse Cloud Code and 
+    // pass our 'data' object to it
+    Parse.Cloud.run("sendEmail", data, {
+      success: function(object) {
+        $('#response').html('Email sent!').addClass('success').fadeIn('fast');
+      },
+
+      error: function(object, error) {
+        console.log(error);
+        $('#response').html('Error! Email not sent!').addClass('error').fadeIn('fast');
+      }
+    });
+  });
+
+});
