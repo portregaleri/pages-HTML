@@ -4,7 +4,7 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "İsim Zorunludur ";
+    $errorMSG = "Name is required ";
 } else {
     $name = $_POST["name"];
 }
@@ -26,15 +26,25 @@ if (empty($_POST["msg_subject"])) {
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Mesaj Zorunludur ";
+    $errorMSG .= "Mesaj gerekiyor ";
 } else {
     $message = $_POST["message"];
 }
 
-// EMAIL
+// UPLOAD
 if (empty($_POST["upload"])) {
-    $email = $_POST["upload"];
+    $errorMSG .= "Mesaj gerekiyor ";
+} else {
+    $message = $_POST["upload"];
 }
+
+// OPTİON
+if (empty($_POST["option"])) {
+    $errorMSG .= "Mesaj gerekiyor ";
+} else {
+    $message = $_POST["option"];
+}
+
 
 $EmailTo = "portregaleri@gmail.com";
 $Subject = "Yeni Mesaj Alınmıştır";
@@ -55,6 +65,9 @@ $Body .= $message;
 $Body .= "\n";
 $Body .= "upload: ";
 $Body .= $upload;
+$Body .= "\n";
+$Body .= "option: ";
+$Body .= $option;
 $Body .= "\n";
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
