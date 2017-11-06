@@ -23,4 +23,3 @@ Parse.Cloud.define("sendEmail", function(request, response) {
     }
   });
 });
-
