@@ -6,7 +6,7 @@ hgroup,menu,nav,section,textarea{display:block}* =*/
 .mega-menu *,:focus,a:active{outline:0}.mega-menu *,ol,ul{list-style:none}
 .mega-menu *,a:visited{text-decoration:none}body#layout .logo-left{width:40%}body#layout .ad-right{width:50%}body#layout .main-wrapper{width:60%;float:left}
 body#layout .mega-menu{display:none}
-.mega-menu{margin:10px auto;padding:0;display:block;float:none;position:relative;z-index:999;max-width:1280px;width:100%;font-size:16px;min-height:50px;clear:both;box-sizing:border-box}
+.mega-menu{margin:10px auto;padding:0;display:block;float:none;position:relative;z-index:999;max-width:100%;width:100%;font-size:16px;min-height:50px;clear:both;box-sizing:border-box}
 .mega-menu *{box-sizing:border-box!important;font-weight:400;-webkit-tap-highlight-color:transparent;text-align:left}
 .po_img .read-more a:hover,titleh h2 a:hover{text-decoration:underline}
 @media screen and (max-width:767px){.mega-menu{float:left;margin:0;min-width:200px}
