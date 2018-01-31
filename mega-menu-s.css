@@ -23,7 +23,7 @@ body#layout .mega-menu{display:none}
     text-shadow: 1px 2px 2px #000;
 }
 .mega-menu a.arrow{list-style:none;background-image:url(http://3.bp.blogspot.com/-LzmPTNyR6po/TwETZufjSTI/AAAAAAAAATo/oisHmXUjmSY/s1600/arrow_white.gif);background-repeat:no-repeat;background-position:right center;padding:7px 24px 7px 10px;    text-shadow: 1px 2px 1px #000;letter-spacing: .01em;text-transform: uppercas;}
-.mega-menu i.arrow {
+.arrow {
     background-image: url(http://3.bp.blogspot.com/-LzmPTNyR6po/TwETZufjSTI/AAAAAAAAATo/oisHmXUjmSY/s1600/arrow_white.gif);
     background-repeat: no-repeat;
     background-position: right center;
