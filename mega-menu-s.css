@@ -23,7 +23,12 @@ body#layout .mega-menu{display:none}
     text-shadow: 1px 2px 2px #000;
 }
 #mega-menu a.arrow{list-style:none;background-image:url(http://3.bp.blogspot.com/-LzmPTNyR6po/TwETZufjSTI/AAAAAAAAATo/oisHmXUjmSY/s1600/arrow_white.gif);background-repeat:no-repeat;background-position:right center;padding:7px 24px 7px 10px;    text-shadow: 1px 2px 1px #000;letter-spacing: .01em;text-transform: uppercas;}
-
+#mega-menu a.arrow {
+    background-image: url(http://3.bp.blogspot.com/-LzmPTNyR6po/TwETZufjSTI/AAAAAAAAATo/oisHmXUjmSY/s1600/arrow_white.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 7px 24px 7px 10px;
+}
 .mega-menu>section.menu-list-items{margin:0;padding:0;display:block;float:left;width:100%;background: url(http://4.bp.blogspot.com/-KvWwwYc98ac/T0zcRrzHcJI/AAAAAAAAFlM/ehAGx-cm8A8/s1600/navbar-bg.png) repeat-x;border-bottom:2px solid #2f4154}
 .mega-menu .menu-logo{margin:0;padding:0;display:none;float:left;position:relative}
 @media screen and (min-width:768px){.mega-menu .menu-logo.menu-logo-align-right{float:right}}
