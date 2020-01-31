@@ -149,7 +149,7 @@
       var provider = {
         'id': config.postId,
         'data': items,
-        'loadNext': paginator,
+        
         'hasMore': hasMore,
         'getMeta': getMeta,
         'onReply': onReply,
@@ -166,7 +166,15 @@
           window.goog.comments.render(holder, provider);
         }
       };
-
+     // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
  
     })();
 // ]]>
