@@ -167,14 +167,6 @@
         }
       };
 
-      // render now, or queue to render when library loads:
-      if (window.goog && window.goog.comments) {
-        render();
-      } else {
-        window.goog = window.goog || {};
-        window.goog.comments = window.goog.comments || {};
-        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
-        window.goog.comments.loadQueue.push(render);
-      }
+ 
     })();
 // ]]>
