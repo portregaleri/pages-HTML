@@ -149,7 +149,7 @@
       var provider = {
         'id': config.postId,
         'data': items,
-        
+        'loadNext': paginator,
         'hasMore': hasMore,
         'getMeta': getMeta,
         'onReply': onReply,
