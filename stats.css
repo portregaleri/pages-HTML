@@ -1,0 +1,29 @@
+/* Blogger Custom Stats widget by msdesignbd.com */
+.Stats img {display:none!important;background-image:none;}
+.Stats .counter-wrapper {width: 96%;text-align: right;margin: 5px 0 5px 10px;font-weight: 700;font: bold 12px Arial;color: #333;line-height: 1.2em;letter-spacing: .01em;margin: 0 10px 0 10px;padding: 10px 0 10px 0px;border-bottom: solid 1px #ddd;line-height: 1.3em;font-size: 18px;}
+.Stats .counter-wrapper:after {float:left;text-align:left;font-weight:700;color:#333;text-shadow: none;}
+.Stats .counter-wrapper:after {content:&quot;Sayfa Görüntülemeleri&quot;;float:left;text-align:left;font-weight:700;color:#333;font-size: 12px;    text-shadow: none;}
+.counts {display: inline-block; width: 96%;font-size: 12px;line-height: 35px;color: #333;font-weight: 700;margin: 10px 0 0 10px;letter-spacing: .01em;border-bottom: solid 1px #ddd;line-height: 1.3em; padding: 10px 0 10px 0;}
+.counts .count {display:inline-block;font-size:16px;height:30px;vertical-align:top;direction:ltr;float:right;color:#333;font-weight:700!important;text-transform: uppercase;letter-spacing: .01em;}
+.counts:hover .titles:before {color:#aaa!important;border-radius:2px;border-color:rgba(255,255,255,0.1)}
+.counts1 {display: inline-block;width: 96%;font-size: 12px;line-height: 35px;color: #333;font-weight: 700;margin: 10px 0 0 10px;letter-spacing: .01em;text-indent: 0;line-height: 1.3em;padding: 10px 0 10px 0;}
+.text-counter-wrapper {display:inline-block;font-size:16px;height:30px;font-size: 12px;}
+.counts1 .count {display:inline-block;font-size:16px;height:30px;vertical-align:top;direction:ltr;float:right;color:#333;font-weight:700!important;text-transform: uppercase;letter-spacing: .01em;}
+.counts1:hover .titles:before {color:#aaa!important;border-radius:2px;border-color:rgba(255,255,255,0.1)}
+.counter-wrapper {display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;margin:0 10px 0 10px;float:left;width:10px;text-align:center;}
+.counts:before, .counts1:before, .text-counter-wrapper:before{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;margin:0 10px 0 10px;float:left;width:10px;text-align:center;text-shadow: 1px 2px 1px #000;}
+.counter-wrapper,.text-counter-wrapper:before, .counts:before, .counts1:before{display:block;color:#aaa;font-size:35px;border-radius:2px;margin:0px 38px 0 0;}
+.index2:before, .index1:before{color:#333;display:inline-block;font-size:13px;font-family:FontAwesome;font-style:normal;font-weight:normal;margin:0 10px 0 10px;float:left;width:10px;text-align:center;}
+.index2:before, .index1:before{display:block;width:35px;height:35px;font-size:18px;line-height:24px;border-radius:2px;margin:0px 8px 0 0;}
+.searchform1:before{color:#aaa;display:inline-block;font-size:13px;font-family:FontAwesome;font-style:normal;font-weight:normal;margin:0 10px 0 10px;float:left;width:10px;text-align:center;}
+.searchform1:before{display:block;width:35px;height:35px;font-size:18px;line-height:24px;border-radius:2px;margin: 6px 0px 0 4px;}
+.widgettitle:before,.sidebar h2:before,.sidebar1 h2:before,.footer h2:before,#ads h2:before{color:#333;display:inline-block;font-size:13px;font-family:FontAwesome;font-style:normal;font-weight:normal;margin:0 10px 0 0px;float:left;width:10px;text-align:center;}
+.widgettitle:before,.sidebar h2:before,.sidebar1 h2:before,.footer h2:before, #ads h2:before{display:block;width:30px;height:30px;font-size:18px;line-height:24px;border-radius:2px;margin:-5px 8px 0 0;}
+.counter-wrapper.text-counter-wrapper:before {content:&quot;\f06e&quot;;}
+.counts.post2:before {content:&quot;\f044&quot;;}
+.counts1.comment:before {content:&quot;\f0e6&quot;;}
+.index2:before {content:&quot;\f030&quot;;}
+.index1:before {content:&quot;\f083&quot;;}
+.searchform1:before {content:&quot;\f002&quot;;}
+.widgettitle:before, .sidebar h2:before, .sidebar1 h2:before, .footer h2:before, #ads h2:before {content:&quot;\f0a4&quot;;}
+#Stats1_content {width:auto;height:auto;}
